@@ -22,15 +22,27 @@ public class PessoaService {
     }
 
     private void salvarPessoasIniciais() {
-        Pessoa pessoa1 = new Pessoa("João", 28, "Masculino", "Atlético", "Intermediário");
+        Pessoa pessoa1 = new Pessoa("João", 28, "Masculino", "Ectomorfo", "Intermediário");
         Pessoa pessoa2 = new Pessoa("Maria", 22, "Feminino", "Endomorfo", "Iniciante");
         Pessoa pessoa3 = new Pessoa("Alex", 35, "Outro", "Mesomorfo", "Avançado");
         Pessoa pessoa4 = new Pessoa("Ana", 30, "Feminino", "Ectomorfo", "Intermediário");
+        Pessoa pessoa5 = new Pessoa("Pedro", 18, "Masculino", "Ectomorfo", "Intermediário");
+        Pessoa pessoa6 = new Pessoa("Vitor", 21, "Masculino", "Endomorfo", "Avançado");
+        Pessoa pessoa7 = new Pessoa("Stela", 22, "Outro", "Mesomorfo", "Intermediário");
+        Pessoa pessoa8 = new Pessoa("Tales", 25, "Outro", "Endomorfo", "Iniciante");
+        Pessoa pessoa9 = new Pessoa("Fernando", 40, "Masculino", "Ectomorfo", "Avançado");
+        Pessoa pessoa10 = new Pessoa("Rebeca", 19, "Feminino", "Mesomorfo", "Intermediário");
 
         pessoaRepository.save(pessoa1);
         pessoaRepository.save(pessoa2);
         pessoaRepository.save(pessoa3);
         pessoaRepository.save(pessoa4);
+        pessoaRepository.save(pessoa5);
+        pessoaRepository.save(pessoa6);
+        pessoaRepository.save(pessoa7);
+        pessoaRepository.save(pessoa8);
+        pessoaRepository.save(pessoa9);
+        pessoaRepository.save(pessoa10);
 
         System.out.println("Pessoas salvas no banco de dados com sucesso!");
     }
